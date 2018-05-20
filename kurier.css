@@ -1,0 +1,124 @@
+body {  
+  
+  
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
+td{
+	border: 1px solid black;
+	background: #FAFAD2;
+	border-color: #D3D3D3;
+	border-radius: 5px;
+}
+
+p{
+	font-size: 20px;
+}
+
+.kurier_order_address p{
+	font-size: 20px;
+}
+
+.order_container{
+	max-width: 500px;
+	min-width: 250px;
+	margin: 20px;
+}
+.title{
+	text-align: center;
+}
+#img_done{
+	width: 25px;
+	height: 25px;
+}
+.button_error,.button_order_done {
+	border-radius: 5px;
+	color:#fff;
+	border-style: none;
+	margin-left: 1px; 
+	height: 27px;
+	background: #F59B00;
+	width:100%;
+}
+
+.button_order_done{
+	background: green;
+	margin-top: 10px;
+	height:45px;
+}
+
+.button_error:hover{
+	background-color:red;
+} 
+.button_order_done:hover{
+	background-color: #228B22;
+} 
+
+.order_info{
+	text-align:center;
+	font-size: 15px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+
+.send_close{
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.button_error a{
+	text-decoration: none;
+	color: #fff;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}

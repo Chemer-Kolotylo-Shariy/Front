@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="kucharz.css">
+</head>
+<body>
+	<table class="m_table">
+ 	    <tbody>
+    	  <tr>
+       		<td>
+        	  <div class="order_container">
+        	 	<div class="order-grid">
+			            <h3 class="title">Order 1</h3>
+
+				        <p class="kurier_order_address"><strong>Address</strong></p>
+				        <p class="kurier_order_address">ul. Kisielewskiego 18, mieszkanie 10</p>
+						<p class="kurier_order_address">Poland, Lublin</p>
+
+
+				        <hr size=1px color=orange width=80% align=left>
+				        <p class="order_info"><strong>Time of order:</strong> 15:49, 20.10.2018</p>
+
+			          	<div class="button_block">
+			          		<button class="button_error"><a href="#product_error_popup">Problem with this order?</a></button> </br>
+			          		<button class="button_order_done"><img id="img_done"src="http://www.myiconfinder.com/uploads/iconsets/256-256-583f916fff606f7649d9859ca5097961.png" style="vertical-align: middle"> Done </button>
+			            </div>
+
+			 	</div>
+			  </div>
+			</td>
+		  </tr>
+		</tbody>
+	</table>
+
+
+	<div id="product_error_popup" class="overlay">
+		<div class="popup">
+			<div class = "error_info">
+				<a class="close" href="#">&times;</a>
+				<p><strong>What kind of problem?</strong></p>
+				<form>
+  <p><input type="radio" name="answer" value="a1">Client didn't have enough money<Br>
+  <input type="radio" name="answer" value="a2">I didn't find an address<Br>
+  <input type="radio" name="answer" value="a2">Too late order<Br>
+  <input type="radio" name="answer" value="a3">Other..</p>
+  <p><textarea rows="10" cols="45" name="text"></textarea></p>
+
+  <a class="send_close" href="#"><input type="submit" value="Send"></a>
+ </form>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
