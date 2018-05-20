@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="m_tab.css">
+</head>
+<body>
+
+	<table class="m_table">
+ 	    <tbody>
+    	<tr>
+        <td>
+			<div class="container">
+  			<div class="cellphone-container">    
+		      <div class="ORDER">   
+		          <div class="order-grid">
+						<a href="#popup_1" class="remove">X</a>
+			              <h3 class="title">Order 1</h3>
+			              									
+				            <p class="client_info_title"> NAME Jan Kowalski</p>
+				            <p class="client_info_title"> ADRESS Lublin ul.Peowiaków 10, 9</p>
+				            <p class="client_info_title"> TELEFON +48 754 869 269</p>
+				          	<hr size=1px color=orange width=80% align=left>
+				            <p id="order_cena"> CENA $38.00</p>
+				            <p id="order_info_title"> PAYMENT C.O.D.</p>
+				            <hr size=1px color=orange width=80% align=left>
+				            <p id="order_time"> TIME DELIVERY 17:05, 20.10.2018</p>
+				            <p id="order_status"> ORDER STATUS Waiting for confirmation</p>
+				            <hr size=1px color=orange width=80% align=left>
+				            <p class="order_info"><strong>Time of order:</strong> 15:49, 20.10.2018</p>
+
+			          		<div class="button_block">
+			          		<button class="button_order"><img id="img_done"src="http://www.myiconfinder.com/uploads/iconsets/256-256-583f916fff606f7649d9859ca5097961.png" style="vertical-align: middle"> Confirm </button>
+			          		<button class="see_order_details"><a href="#product_cart_popup">See details</a></button>
+
+			          	</div>
+			         </div>         	  
+          	   </div>
+          	</div>
+          </div>
+  </td>
+  </tbody>
+</table>
+
+
+<div id="popup_1" class="overlay">
+	<div class="popup">
+		<h2>Do you want to delete order?</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<button id="button_delete">Delete</button>
+			<button id="button_cancel">Cancel</button>
+		</div>
+	</div>
+</div>
+
+
+	<div id="product_cart_popup" class="overlay">
+	<div class="popup">
+		<h3>Order List</br><span>ID: Q9hr983 </span></h3>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<p><strong>Kod rabatowy: </strong>10TOPMONTH</p>
+			<table class="popup_cart">
+				<thead>
+					<tr>
+						<td><p>№</p></td>
+						<td><p>Image</p></td>
+						<td><p>Info</p></td>
+						<td><p>Price</p></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><p>1</1p></td>
+						<td><img src="https://img.grouponcdn.com/deal/nhjcKdKnuawjKX427U9F/GK-2048x1229/v1/c700x420.jpg" alt="pizza_item" class="item_img" /></td>
+						<td>
+							<p class="prod_name">Pizza Margherita</p>
+							<p class="prod_size"><strong>Size:</strong> M, S, M</p>
+							<p> <strong>Count: </strong> 3: $5.00, $7.00, $10.00 </p>
+						</td>
+						<td class="prod_total"><p>$22.00</p></td>
+					</tr>
+
+					<tr>
+						<td><p>2</p></td>
+						<td><img src="https://du7ybees82p4m.cloudfront.net/552540bba44aa1.42595043.png?width=910&height=512" alt="pizza_item" class="item_img" /></td>
+						<td>
+							<p class="prod_name">Neapolitan</p>
+							<p class="prod_size"><strong>Size:</strong> S</p>
+							<p> <strong>Count: </strong> 1: $10.00 </p>
+						</td>
+						<td class="prod_total"><p>$10.00</p></td>
+					</tr>
+
+					<tr>
+						<td><p>3</p></td>
+						<td><img src="https://restaumatic.imgix.net/uploads/accounts/1984/media_library/c65b5c9680a6126fa67953a85ffb1d95.jpeg?auto=compress&crop=focalpoint&fit=max&h=auto&w=1920" class="item_img" /></td>
+						<td>
+							<p class="prod_name">Pizza 4Cheese (Heart) </p>
+							<p class="prod_size"><strong>Size:</strong> M, M</p>
+							<p> <strong>Count: </strong> 2: $7.00 </p>
+						</td>
+						<td class="prod_total"><p>$14.00</p></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="total_price_list">
+   			<ul>
+      		<li class="total_price"><span class="label">Subtotal  </span><span class="value">$35.00</span></li>
+         	 <li class="total_price"><span class="label">Delivery  </span><span class="value">$3.00</span></li>
+         	 <hr size=1px color=#D3D3D3 width=87% align=left>
+            <li class="total_row"><span class="label">Total  </span><span class="value"><strong>$38.00</strong></span></li>
+		    </ul>
+		  </div>
+
+		</div>
+	</div>
+</div>
+	
+</div>
+</body>
+</html>
