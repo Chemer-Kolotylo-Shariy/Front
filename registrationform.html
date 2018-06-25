@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registration form</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+	<link rel="stylesheet" href="registrationformstyle.css">
+</head>
+<body>
+	<div class="logbox">
+		<img src="pizzadlogo.png" class="loginlogo">
+			<h1>Lets register you</h1>
+			<form>
+				<input type="text" name="" id="name" placeholder="Enter Name" pattern="[a-z]{1,15}" title="Username should only contain lowercase letters. e.g.john">
+				<input type="text" name="" id="surname" placeholder="Enter Surname" pattern="^[a-zA-Z]+$" title="Username should only contain lowercase letters. e.g.john">
+				<input type="text" name="" id="username" placeholder="Enter Username" pattern="^[a-zA-Z]+$" title="Username should only contain lowercase letters. e.g.john">
+				<div id="line"></div>
+				<input type="text" name="" id="phone" placeholder="Enter Phone number" pattern="+48-[0-9]{3}-[0-9]{3}-[0-9]{3}" title="Username should only contain lowercase letters. e.g.john">
+				<input type="text" name="" id="adress" placeholder="Enter Adress" pattern="[a-z]{1,15}" title="Username should only contain lowercase letters. e.g.john">
+				<input type="password" name="" placeholder="Enter Password">
+				<input type="submit" name="Login" placeholder="Login">
+				<div id="line"></div>
+    			<div class="termsconditions">
+  					<input class="hidden-xs-up" id="terms" type="checkbox" /><label class="terms" for="terms"></label><label class="labelterms" for="terms">I accept the Terms of Service</label>
+				</div>
+				
+			</form>
+
+	</div>
+</body>
+</html>
